@@ -1,3 +1,4 @@
+'use strict'
 // Igualdad estricta
 console.log(5 === 5);         // true
 console.log(5 === '5');       // false (tipos diferentes de datos)
