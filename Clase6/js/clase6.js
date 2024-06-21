@@ -18,6 +18,7 @@ console.log(Number(edadPersona) >= edadPermitida ? 'Puede ingresar' : 'No puede 
 let nota = 4;
 let abreviatura = 'Sin nota';
 
+
 // if (nota >= 0 && nota <= 3) {
 //   abreviatura = 'NEN';
 // } else if (nota > 3 && nota <= 5) {
