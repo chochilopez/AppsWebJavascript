@@ -1,7 +1,8 @@
 'use strict'
 
 // Practica 1
-// Realizar un script para un sitio donde no está permitido el ingreso de menores de 18 años. Para ello crea una pagina web donde se le pregunte al usuario su edad y le avise si puede ingresar o no.
+// Realizar un script para un sitio donde no está permitido el ingreso de menores de 18 años. Para ello crea una pagina web donde se le pregunte al 
+// usuario su edad y le avise si puede ingresar o no.
 
 // Practica 2
 // Examina el siguiente código. Primero explica porqué se produce el funcionamiento no deseado, luego solucionalo.
@@ -41,7 +42,6 @@
 // Crea una variable que con el mensaje: “Cuanto sale: “
 // Utilizando la sentencia switch (y tu creatividad) realiza una escala siendo 0 algo barato o regalado y 10 algo carísimo.
 // Saca por consola un mensaje concatenando la variable mensaje con el resultado del switch
-
 
 // Practica 7
 // Chequeador de amigos
