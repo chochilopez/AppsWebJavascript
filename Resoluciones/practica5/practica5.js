@@ -5,10 +5,15 @@
 // Crea una página y un script que permita el ingreso de millas y devuelva su correspondiente conversión a kilómetros.
 // Presentá al usuario un alert con el siguiente mensaje: ‘La distancia de … millas es igual a … kilometros.’
 // Tené en cuenta que una milla es igual a 1.60934 kilometros.
+let millas = Number(prompt('Ingresa la distancia en millas.'));
+let kilometros = millas / 1.60934;
+alert(`La distancia de ${millas} millas es equivalente a ${kilometros} kilometros.`);
 
 // Practica 2:
 // Calculadora de Indice de Masa Corporal
-// Creá una pagina y un script donde se reciban dos parametros, en primer lugar la altura en centimetros, luego el peso en kilos. Converti los resultados a pulgadas (una pulgada es igual a 2.54 cm) y libras (2.2046 libras es igual a 1 kilo). Luego calculá el IMC, para ello tenes que dividir los kilos por la altura en metros. Mostra todos los resultados en un alert.
+// Creá una pagina y un script donde se reciban dos parametros, en primer lugar la altura en centimetros, luego el peso en kilos. 
+// Converti los resultados a pulgadas (una pulgada es igual a 2.54 cm) y libras (2.2046 libras es igual a 1 kilo). 
+// Luego calculá el IMC, para ello tenes que dividir los kilos por la altura en metros. Mostra todos los resultados en un alert.
 
 // Preguntas, contestalas sin codificar.
 
