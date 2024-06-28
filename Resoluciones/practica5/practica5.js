@@ -5,7 +5,6 @@
 // Crea una página y un script que permita el ingreso de millas y devuelva su correspondiente conversión a kilómetros.
 // Presentá al usuario un alert con el siguiente mensaje: ‘La distancia de … millas es igual a … kilometros.’
 // Tené en cuenta que una milla es igual a 1.60934 kilometros.
-let millas = Number(prompt('Ingresa la distancia en millas.'));
 let millas = Number(prompt('Ingresá la cantidad de millas.'));
 let kilometros = millas * 1.60934;
 alert(`La distancia de ${millas} millas es igual a ${kilometros} kilometros.`);
@@ -73,6 +72,7 @@ console.log(`${alturaCm} centimetros es igual a ${alturaPulgadas} pulgadas.
 // numero2--;
 // let total = ++numero1 + numero2;                                                 // 56 + 14 = 70
 // console.log(total);                                                              // 70
+// let total2 = 345 + 335 / 45 + total--;                                           // 345 + 335 / 45 + 70 = 424.44
 // console.log(total2);                                                             // 422.44
 
 // 10. Cual será la salida por consola?
