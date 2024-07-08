@@ -1,5 +1,7 @@
 'use strict'
 
+// Link resoluciones -> https://drive.google.com/file/d/1WSoKs9rUnRfRDdsyB3YbvdxuNysVnCVV/view?usp=drive_link
+
 // Práctica 1:
 // 1- Busca la consola, abrirla, ingresa la operación 10+9 y presiona enter, cual es la salida?
 // 2- Utiliza la sentencia de arriba dentro de un console.log().

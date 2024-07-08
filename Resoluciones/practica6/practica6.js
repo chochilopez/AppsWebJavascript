@@ -1,5 +1,7 @@
 'use strict'
 
+// Link resoluciones -> 
+
 // Practica 1
 // Realizar un script para un sitio donde no está permitido el ingreso de menores de 18 años. Para ello crea una pagina web donde se le pregunte al 
 // usuario su edad y le avise si puede ingresar o no.

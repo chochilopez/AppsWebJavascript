@@ -1,5 +1,7 @@
 'use strict'
 
+// Link resoluciones -> https://drive.google.com/file/d/1BCvYHQFBW_frZ6jVQ6FEL3p3XkRS7z4I/view?usp=drive_link
+
 // Práctica 1:
 // -Declarar dos variables: dividendo y divisor, asignales el valor numero que desees.
 // -Declarar una variable resultado y almacenar el resultado de la division entre dividendo y divisor.

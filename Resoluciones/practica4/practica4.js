@@ -1,5 +1,7 @@
 'use strict'
 
+// Link resoluciones -> https://drive.google.com/file/d/1K4OpiR_ZBtbT381q2eTt0VZAU1lLNYlZ/view?usp=drive_link
+
 // Práctica 1
 // -Crea una página web
 // -Importa un archivo .js

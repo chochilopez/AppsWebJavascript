@@ -1,5 +1,7 @@
 'use strict'
 
+// Link resoluciones -> 
+
 // Practica 1:
 // Creá un conversor de millas a kilómetros.
 // Crea una página y un script que permita el ingreso de millas y devuelva su correspondiente conversión a kilómetros.

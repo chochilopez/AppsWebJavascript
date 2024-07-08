@@ -1,5 +1,7 @@
 'use strict'
 
+// Link resoluciones -> https://drive.google.com/file/d/1EzJsJpSTDBeMe7qVBGxo4B40DmKWVgDS/view?usp=drive_link
+
 // Práctica 1:
 // Cual te parece que es la salida de las siguientes sentencias?
 

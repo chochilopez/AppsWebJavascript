@@ -1,5 +1,7 @@
 'use strict'
 
+// Link resoluciones -> 
+
 // Practica 1
 // Crea un array con 10 elementos, por ejemplo una lista de compras.
 // Agrega tres elementos, uno al principio, uno al final y otro al medio del array.
