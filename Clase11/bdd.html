@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>BDD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script>
+    mocha.setup('bdd'); // minimal setup
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>
+    let assert = chai.assert;
+  </script>
+</head>
+<body>
+  <script>
+    function diferenciaAños(fecha1, fecha2) {
+      if (fecha1 == null && fecha2 == null) {
+        return null;
+      } else if (fecha1 !=null && fecha2 == null) {
+        // ejecuto codigo en el cual se resta la fecha respecta la fecha actual
+        // Hacer de tarea
+        return null;
+      } 
+
+      let diferenciaMilisegundos = fecha1.getTime() - fecha2.getTime(); // El total de diferencia en milisegundos
+      if (diferenciaMilisegundos < 0) {
+        return Math.abs(Math.ceil(diferenciaMilisegundos / 1000 / 60 / 60 / 24 / 365));    
+      }
+
+      return Math.floor(diferenciaMilisegundos / 1000 / 60 / 60 / 24 / 365);     
+    }
+  </script>
+  <script src="./tests/test.js"></script>
+  <div id="mocha"></div>
+  <script>
+    mocha.run();
+  </script>
+</body>
+</html>
