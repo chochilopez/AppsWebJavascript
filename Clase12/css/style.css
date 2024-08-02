@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #505050;
+  background: hsl(220, 40%, 60%);
+}
+
+.tareas {
+  font-family: 'Roboto', sans-serif;
+  padding: 30px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 20px;
+  background: azure;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: row;
+}
+
+.formulario .input_tarea {
+  font-family: 'Montserrat';
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.mensaje {
+  font-family: 'Montserrat';
+  padding: 5px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: fit-content;
+  margin-top: 2px;
+}
+
+.formulario .boton {
+  padding: 10px 20px;
+  background-color: hsl(300, 40%, 60%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: hsl(101, 40%, 60%);
+  size: 400px;
+}
+
+.listado {
+  font-family: 'Playwrite Argentina';
+  list-style: none;
+  padding: 0;
+}
+
+.listado li {
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
