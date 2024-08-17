@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejemplo navbar</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+	<!-- INICIO Barra de navegacion -->
+	<header>
+		<div class="barra">
+			<div class="barra_marca">
+				<img class="marca_logo" src="assets/images/shop.png">
+				<span class="marca_kiosco">Kiosco</span>
+				<span class="marca_nombre">El Kiosquito</span>
+			</div>
+			<div class="barra_links">
+				<a class="link">Link 1</a>
+				<a class="link">Link 2</a>
+				<a class="link">Link 3</a>
+				<a class="icono" href="#"><i class="fa-brands fa-facebook"></i></a>
+				<a class="icono" href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a class="icono" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+			</div>
+			<div class="barra_dropdown">
+				<span class="dropdown_boton"><i class="fa-solid fa-bars"></i></span>
+				<div class="dropdown_links">
+					<a class="link" >Link 1</a>
+				  <a class="link" >Link 2</a>
+				  <a class="link" >Link 3</a>
+				  <div class="dropdown_contacto">
+				    <a class="icono" href="#"><i class="fa-brands fa-facebook"></i></a>
+				    <a class="icono" href="#"><i class="fa-brands fa-instagram"></i></a>
+				    <a class="icono" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- FIN Barra de navegacion -->
+
+	<!-- INICIO Seccion Principal -->
+	<section class="seccion_principal">
+		<div class="poligono1"></div>
+		<div class="poligono2"></div>
+		<div class="poligono3"></div>
+		<div class="poligono4"></div>
+		<div class="container_carousel">
+			<div class="principal_informacion">
+				<p class="principal_subtitulo">El mejor kiosco del mundo</p>
+				<p class="principal_titulo"><strong>Vení a comprar</strong> algo!</p>
+				<p class="principal_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur alias voluptas deleniti. Inventore, dolorem quaerat. Cumque, animi aliquid eveniet rerum corrupti minus, nemo eum sunt temporibus, iste ad ipsa consequuntur.</p>
+			</div>
+			<div class="principal_carousel">
+				<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="imagen" src="assets/images/carousel/1.jpg">
+							<span class="precio">$11</span>
+							<span class="oferta">-1%</span>
+						</div>
+						<div class="carousel-item">
+							<img class="imagen" src="assets/images/carousel/2.jpg">
+							<span class="precio">$12</span>
+							<span class="oferta">-2%</span>
+						</div>
+						<div class="carousel-item">
+							<img class="imagen" src="assets/images/carousel/3.jpg">
+							<span class="precio">$13</span>
+							<span class="oferta">-3%</span>
+						</div>
+						<div class="carousel-item">
+							<img class="imagen" src="assets/images/carousel/4.jpg">
+							<span class="precio">$14</span>
+							<span class="oferta">-4%</span>
+						</div>
+						<div class="carousel-item">
+							<img class="imagen" src="assets/images/carousel/5.jpg">
+							<span class="precio">$25</span>
+							<span class="oferta">-5%</span>
+						</div>
+						<div class="carousel-item">
+							<img class="imagen" src="assets/images/carousel/6.jpg">
+							<span class="precio">$26</span>
+							<span class="oferta">-6%</span>
+						</div>
+						<div class="carousel-item">
+							<img class="imagen" src="assets/images/carousel/7.jpg">
+							<span class="precio">$27</span>
+							<span class="oferta">-7%</span>
+						</div>
+						<div class="carousel-item">
+							<img class="imagen" src="assets/images/carousel/8.jpg">
+							<span class="precio">$28</span>
+							<span class="oferta">-8%</span>
+						</div>
+						<div class="carousel-item">
+							<img class="imagen" src="assets/images/carousel/9.jpg">
+							<span class="precio">$29</span>
+							<span class="oferta">-9%</span>
+						</div>
+						<div class="carousel-item">
+							<img class="imagen" src="assets/images/carousel/10.jpg">
+							<span class="precio">$30</span>
+							<span class="oferta">-10%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<!-- FIN Seccion Principal -->
+
+	<!-- INICIO Seccion Tarjetas -->
+	<section class="seccion_tarjetas">
+		<div class="fondo_atomic">
+			<span class="fondo_orbit">
+				<img src="assets/images/shop.png" class="fondo_core"></img>
+				<img src="assets/images/svg/1.svg" class="svg_electron_1"></img>
+				<img src="assets/images/svg/2.svg" class="svg_electron_2"></img>
+				<img src="assets/images/svg/3.svg" class="svg_electron_3"></img>
+				<img src="assets/images/svg/4.svg" class="svg_electron_4"></img>
+				<img src="assets/images/svg/5.svg" class="svg_electron_5"></img>
+				<img src="assets/images/svg/6.svg" class="svg_electron_6"></img>
+				<img src="assets/images/svg/7.svg" class="svg_electron_7"></img>
+				<img src="assets/images/svg/8.svg" class="svg_electron_8"></img>
+				<img src="assets/images/svg/9.svg" class="svg_electron_9"></img>
+				<img src="assets/images/svg/10.svg" class="svg_electron_10"></img>
+			</span>
+			<span class="fondo_orbit_two"></span>    
+		</div>
+		<div class="tarjetas_titulo">
+			<div class="titulo">
+				Realizamos <span class="resaltado">recargas</span> a todos los <span class="resaltado">celulares</span>.
+			</div>
+			<div class="subtitulos">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius ea dolor amet rem cum tenetur repudiandae itaque deserunt neque omnis quod ullam voluptas facilis, ratione quidem quasi quae distinctio.
+				Magnam deserunt aperiam omnis amet, molestiae in quae earum, porro recusandae corporis quam. Obcaecati magnam quia blanditiis! Inventore, earum amet repellat ratione dolores ullam? Aliquam magnam architecto animi mollitia provident!
+			</div>
+		</div>
+	</section>	
+	<!-- FIN Seccion Tarjetas -->
+
+</body>
+</html>

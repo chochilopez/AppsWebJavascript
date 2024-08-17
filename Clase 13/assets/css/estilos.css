@@ -1,0 +1,28 @@
+.invisible {
+  display: none !important;
+}
+
+.visible {
+  display: block;
+}
+
+.redondo {
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.fondoRojo {
+  background-color: mediumvioletred;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#foco {
+  margin: 0 auto;
+  width: 50vw;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,924 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&display=swap');
+
+/* Variables, reset y generales */
+:root {
+	--primario: #4073AF;
+	--secundario: #6E95C3;
+	--terciario: #DBE2EF;
+	--negro: #17273B;
+	--blanco: #F0F4F9;
+	--accion: #00FDCF;
+	--fuente1: Lato;
+	--fuente2: Montserrat;
+	--fuente3: 'Open Sans';
+	--fuente4: Roboto;
+	--grande:  50px;
+	--borde: 2px dotted red;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	list-style: none;
+}
+
+a {
+	color: var(--negro);
+	text-decoration: none;
+}
+
+body {
+	background: var(--blanco);
+	font-family: var(--fuente1);
+	color: var(--negro);
+}
+/* FIN Variables, reset y generales */
+
+/* Header */
+.barra {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--primario);
+	padding: 0 10px;
+	color: var(--blanco);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+
+.barra_marca {
+	display: flex;
+	align-items: center;
+}
+
+.marca_logo {
+	height: 70px;
+	padding: 10px;
+}
+
+.marca_kiosco {
+	font-family: var(--fuente2);
+	font-size: 40px;
+	margin-left: 10px;
+}
+
+.marca_nombre {
+	margin-left: 10px;
+	font-weight: 800;
+	font-family: var(--fuente1);
+	font-size: 40px;
+}
+
+.barra_links .link {
+	font-family: var(--fuente3);
+	color: var(--blanco);
+	font-size: 25px;
+	padding: 0 20px;
+	border-radius: 3px;
+	border: 2px solid var(--primario);
+	transition: 0.5s linear;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-transition: 0.5s linear;
+	-moz-transition: 0.5s linear;
+	-ms-transition: 0.5s linear;
+	-o-transition: 0.5s linear;
+}
+
+.barra_links .icono {
+	color: var(--accion);
+	padding: 0 10px;
+	transition: 0.3s linear;
+	font-size: 25px;
+}
+
+.barra_links .link:hover {
+	border: 2px solid var(--blanco);
+}
+
+.barra_links .icono:hover {
+	color: var(--blanco);
+}
+
+.barra_dropdown {
+	position: relative;
+	display: none;
+	width: 100px;
+	text-align: center;
+
+	.dropdown_boton i {
+		background: var(--primario);
+		color: var(--blanco);
+		cursor:  pointer;
+		width: 100px;
+		height: 35px;
+		font-size: 30px;
+	}
+
+	.dropdown_links {
+		display: none;
+		position: absolute;
+		background: var(--primario);
+		min-width: 100px;			
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown_links .link {
+		padding: 12px 16px;
+		color: var(--blanco);
+		display: block;
+	}
+
+	.dropdown_links .link:hover {
+		background: var(--terciario);
+		color: var(--negro);
+	}
+
+	.dropdown_contacto {
+		padding-bottom: 5px;
+	}
+
+	.dropdown_contacto .icono {
+		padding: 5px;
+		color: var(--negro);
+	}
+
+	.dropdown_contacto .icono:hover {
+		padding: 5px;
+		color: var(--blanco);
+	}
+}
+
+.barra_dropdown:hover .dropdown_links {
+	display: block;
+}
+/* FIN Header */
+
+/* INICIO Principal */
+.seccion_principal {
+	overflow: hidden ;
+	background: #4C81BD;
+	height: 93.5vh;
+	position: relative;
+	z-index: -5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container_carousel {
+	display: flex;;
+}
+
+.principal_informacion, .principal_carousel{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+.principal_informacion {
+	flex-direction: column;
+	color: var(--blanco);
+	margin-left: 100px;
+}
+
+.principal_subtitulo {
+	font-family: var(--fuente1);
+	font-size: 40px;
+}
+
+.principal_titulo {
+	font-family: var(--fuente3);
+	font-size: 80px;
+	font-weight: 900;
+}
+
+.principal_texto {
+	font-family: var(--fuente3);
+	font-size: 25px;
+	font-weight: 300;
+}
+
+.principal_titulo > strong {
+	position: relative;
+	white-space: nowrap;
+	&:after {
+		--deco-height: 0.3125em;
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: calc(var(--deco-height) * -0.625);
+		height: var(--deco-height);
+		background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+		background-size: auto 100%;
+		background-repeat: round;
+		background-position: 0em;
+	}
+}
+
+.principal_carousel {
+	position: relative;
+}
+
+.principal_carousel img {
+	width: 550px;
+	border-radius: 300px 150px 350px 100px;
+	-webkit-border-radius: 300px 150px 350px 100px;
+	-moz-border-radius: 300px 150px 350px 100px;
+	-ms-border-radius: 300px 150px 350px 100px;
+	-o-border-radius: 300px 150px 350px 100px;
+}
+
+.principal_carousel .precio {
+	position: absolute;
+	z-index: 10;
+	bottom:5px;
+	right: 5px;
+	background: var(--accion);
+	color: var(--negro);
+	font-size: 35px;
+	font-family: var(fuente2);
+	font-weight: bolder;
+	width: 140px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15%;
+	-webkit-border-radius: 15%;
+	-moz-border-radius: 15%;
+	-ms-border-radius: 15%;
+	-o-border-radius: 15%;
+}
+
+.principal_carousel .oferta {
+	position: absolute;
+	z-index: 10;
+	top:5px;
+	left: 5px;
+	background: var(--negro);
+	color: var(--blanco);
+	font-size: 35px;
+	font-family: var(fuente2);
+	font-weight: bolder;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+}
+
+.poligono1 {
+	border-radius: 0 0 800px 800px;
+	background: #5B8BC2;
+	height: 79vh;
+	width: 108vw;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: -10vw;
+	-webkit-border-radius: 0 0 800px 800px;
+	-moz-border-radius: 0 0 800px 800px;
+	-ms-border-radius: 0 0 800px 800px;
+	-o-border-radius: 0 0 800px 800px;
+}
+
+.poligono2 {
+	width: 0px;
+	height: 0px;
+	border-right: 50vw solid transparent;
+	border-top: 50vw solid #6A96C8;
+	border-left: 50vw solid #6A96C8;
+	border-bottom: 50vw solid #6A96C8;
+	border-top-left-radius: 50vw;
+	border-top-right-radius: 50vw;
+	border-bottom-left-radius: 50vw;
+	border-bottom-right-radius: 50vw;
+	bottom: 50px;
+	left: -50px;
+	position: absolute;
+	z-index: -1;
+}
+
+.poligono3 {
+	clip-path: circle(50% at 50% 50%);
+	background:#79A0CD;
+	height: 80vw;
+	width: 80vw;
+	position: absolute;
+	top: -200px;
+	left: -500px;
+	z-index: -3;
+}
+
+.poligono4 {
+	clip-path: circle(50% at 50% 50%);
+	background:#88ABD3;
+	height: 90vw;
+	width: 90vw;
+	position: absolute;
+	z-index: -4;
+	top: 0;
+	left: 0;
+}
+/* FIN Principal */
+
+/* INICIO Tarjetas */
+.seccion_tarjetas {
+	background: var(--blanco);
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	z-index: -10;
+}
+
+.tarjetas_titulo .titulo {
+	font-family: var(--fuente2);
+	color: var(--primario);	
+	margin-top: 1em;
+	text-align: center;
+	font-weight: 800;
+	font-size: 4rem;
+}
+
+.tarjetas_titulo .subtitulos {
+	margin: 0 40px;
+	text-align: center;
+	font-family: var(--fuente1);
+	color: var(--primario);	
+	font-size: 1.5rem;
+}
+
+.tarjetas_titulo .resaltado {
+	color: var(--accion);
+	font-family: var(--fuente4);
+}
+
+.tarjetas_contenedor {
+	display: flex;
+	justify-content: space-around;
+}
+
+.tarjetas_contenedor .basico, .tarjetas_contenedor .premium {
+	width: 400px;
+	height: 500px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+
+.tarjetas_contenedor .estandar {
+	width: 500px;
+	height: 600px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.233);
+	border-radius: 50px;
+}
+
+/* Fondo electrones */
+.fondo_atomic{
+  position: absolute;
+  top: -500px;
+}
+
+.svg_electron_1 {
+  position: absolute;
+  left: 500px;
+  top: 0;
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+	filter: invert(92%) sepia(10%) saturate(332%) hue-rotate(187deg) brightness(97%) contrast(93%);
+  z-index:-2;
+}
+
+.svg_electron_2 {
+  position: absolute;
+  left: 1195px;
+  top: 1625px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+	filter: invert(92%) sepia(10%) saturate(332%) hue-rotate(187deg) brightness(97%) contrast(93%);
+  z-index:-2;
+}
+
+.svg_electron_3 {
+  position: absolute;
+  left: 1245px;
+  top: 500px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  z-index:-2;
+	filter: invert(92%) sepia(10%) saturate(332%) hue-rotate(187deg) brightness(97%) contrast(93%);
+}
+
+.svg_electron_4 {
+  position: absolute;
+  left: 1520px;
+  top: 1000px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+	filter: invert(92%) sepia(10%) saturate(332%) hue-rotate(187deg) brightness(97%) contrast(93%);
+  z-index:-2;
+}
+
+.svg_electron_5 {
+  position: absolute;
+  left: 500px;
+  top: 1500px;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+	filter: invert(92%) sepia(10%) saturate(332%) hue-rotate(187deg) brightness(97%) contrast(93%);
+  z-index:-2;
+}
+
+.svg_electron_6 {
+  position: absolute;
+  left: 1600px;
+  top: 500px;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+	filter: invert(92%) sepia(10%) saturate(332%) hue-rotate(187deg) brightness(97%) contrast(93%);
+  z-index:-2;
+}
+
+.svg_electron_7 {
+  position: absolute;
+  left: 1100px;
+  top: 1200px;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+	filter: invert(92%) sepia(10%) saturate(332%) hue-rotate(187deg) brightness(97%) contrast(93%);
+  z-index:-2;
+}
+
+.svg_electron_8 {
+  position: absolute;
+  left: -50px;
+  top: 500px;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+	filter: invert(92%) sepia(10%) saturate(332%) hue-rotate(187deg) brightness(97%) contrast(93%);
+  z-index:-2;
+}
+
+.svg_electron_9 {
+  position: absolute;
+  left: 1245px;
+  top: 1000px;
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+	filter: invert(92%) sepia(10%) saturate(332%) hue-rotate(187deg) brightness(97%) contrast(93%);
+  z-index:-2;
+}
+
+.svg_electron_10 {
+  position: absolute;
+  left: 320px;
+  top: 1000px;
+  display: inline-block;
+  width: 450px;
+  height: 450px;
+	filter: invert(92%) sepia(10%) saturate(332%) hue-rotate(187deg) brightness(97%) contrast(93%);
+  z-index:-2;
+}
+
+.fondo_orbit {
+  position: relative;
+  display: inline-block;
+  width: 1750px;
+  height: 1750px;
+  border-radius: 50%;
+  border: 10px solid var(--terciario);
+  transition: border-color .7s;
+  z-index:-3;
+  animation: spin 15s linear infinite;
+  -webkit-animation: spin 15s linear infinite;
+}
+
+.fondo_orbit_two{
+  position: absolute;
+  display: inline-block;
+  width: 1050px;
+  height: 1050px;
+  left: 350px;
+  top: 350px;
+  border-radius: 50%;
+  border: 10px solid var(--terciario);
+  transition: border-color .7s;
+  z-index:-4;
+  animation: spin 15s linear infinite;
+  -webkit-animation: spin 15s linear infinite;
+  -webkit-transition: border-color .7s;
+  -moz-transition: border-color .7s;
+  -ms-transition: border-color .7s;
+  -o-transition: border-color .7s;
+}
+
+.fondo_core {
+	margin-top: 675px;
+	margin-left: 675px;
+	width: 300px;
+	height: 300px;
+	transition: margin-left .8s;
+	filter: opacity(0.3);
+	-webkit-transition: margin-left .8s;
+	-moz-transition: margin-left .8s;
+	-ms-transition: margin-left .8s;
+	-o-transition: margin-left .8s;
+	-webkit-filter: opacity(0.3);
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(-360deg); }
+  to { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(-360deg); }
+  to { -webkit-transform: rotate(0deg); }
+}
+
+.fondo_orbit{
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 15000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 15000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 15000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+/* FIN Fondo electrones */
+/* FIN Tarjetas */
+
+/* Media queries */
+/* X-Small */
+@media (max-width: 575px) {
+	.barra {
+		.barra_links {
+			display: none;
+		}
+		.barra_dropdown {
+			display: block;
+		}
+	}
+
+	.seccion_principal {
+		height: 93.5vh;
+		align-items: flex-start;
+	}
+	
+	.container_carousel {
+		margin-top: 20px;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.marca_logo {
+		height: 40px;
+		padding: 3px;
+	}
+	
+	.marca_kiosco {
+		font-size: 20px;
+		margin-left: 3px;
+	}
+	
+	.marca_nombre {
+		font-size: 20px;
+		margin-left: 3px;
+	}
+	
+	.barra_links .link {
+		font-size: 12px;
+		padding: 0 8px;
+	}
+	
+	.barra_links .icono {
+		font-size: 12px;
+		padding: 0 4px;
+	}
+
+	.principal_informacion {
+		margin: 0 10px;
+		width: 100%;
+	}
+	
+	.principal_subtitulo {
+		font-size: 18px;
+	}
+	
+	.principal_titulo {
+		font-size: 35px;
+	}
+	
+	.principal_texto {
+		font-size: 12px;
+		margin-right: 5px;
+	}
+
+	.principal_carousel {
+		padding-top: 30px;
+		margin: auto;
+	}
+	
+	.principal_carousel img {
+		width: 200px;
+	}
+	
+	.principal_carousel .precio {
+		font-size: 14px;
+		width: 50px;
+		height: 35px;
+		bottom: 5px;
+		right: 5px;
+	}
+	
+	.principal_carousel .oferta {
+		font-size: 14px;
+		width: 40px;
+		height: 40px;
+		top: 5px;
+		left: 5px;
+	}
+}
+
+/* Small */
+@media (min-width: 576px) and (max-width: 767px) {
+	.marca_logo {
+		height: 40px;
+		padding: 3px;
+	}
+	
+	.marca_kiosco {
+		font-size: 20px;
+		margin-left: 3px;
+	}
+	
+	.marca_nombre {
+		font-size: 20px;
+		margin-left: 3px;
+	}
+	
+	.barra_links .link {
+		font-size: 12px;
+		padding: 0 8px;
+	}
+	
+	.barra_links .icono {
+		font-size: 12px;
+		padding: 0 4px;
+	}
+
+	.principal_informacion {
+		margin-left: 50px;
+	}
+	
+	.principal_subtitulo {
+		font-size: 18px;
+	}
+	
+	.principal_titulo {
+		font-size: 35px;
+	}
+	
+	.principal_texto {
+		font-size: 12px;
+	}
+	
+	.principal_carousel img {
+		width: 200px;
+	}
+	
+	.principal_carousel .precio {
+		font-size: 14px;
+		width: 50px;
+		height: 35px;
+		bottom: 5px;
+		right: 5px;
+	}
+	
+	.principal_carousel .oferta {
+		font-size: 14px;
+		width: 40px;
+		height: 40px;
+		top: 5px;
+		left: 5px;
+	}
+}
+
+/* Medium */
+@media (min-width: 768px) and (max-width: 991px) {
+	.marca_logo {
+		height: 45px;
+		padding: 5px;
+	}
+	
+	.marca_kiosco {
+		font-size: 25px;
+		margin-left: 5px;
+	}
+	
+	.marca_nombre {
+		font-size: 25px;
+		margin-left: 5px;
+	}
+	
+	.barra_links .link {
+		font-size: 15px;
+		padding: 0 10px;
+	}
+	
+	.barra_links .icono {
+		font-size: 15px;
+		padding: 0 5px;
+	}
+
+	.principal_informacion {
+		margin-left: 70px;
+	}
+	
+	.principal_subtitulo {
+		font-size: 20px;
+	}
+	
+	.principal_titulo {
+		font-size: 45px;
+	}
+	
+	.principal_texto {
+		font-size: 14px;
+	}
+	
+	.principal_carousel img {
+		width: 300px;
+	}
+	
+	.principal_carousel .precio {
+		font-size: 18px;
+		width: 70px;
+		height: 45px;
+		bottom: 10px;
+		right: 10px;
+	}
+	
+	.principal_carousel .oferta {
+		font-size: 18px;
+		width: 50px;
+		height: 50px;
+		top: 10px;
+		left: 10px;
+	}
+}
+
+/* Large */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.marca_logo {
+		height: 60px;
+		padding: 8px;
+	}
+	
+	.marca_kiosco {
+		font-size: 33px;
+		margin-left: 8px;
+	}
+	
+	.marca_nombre {
+		font-size: 33px;
+		margin-left: 8px;
+	}
+	
+	.barra_links .link {
+		font-size: 20px;
+		padding: 0 16px;
+	}
+	
+	.barra_links .icono {
+		font-size: 20px;
+		padding: 0 7px;
+	}
+
+	.principal_informacion {
+		margin-left: 80px;
+	}
+	
+	.principal_subtitulo {
+		font-size: 30px;
+	}
+	
+	.principal_titulo {
+		font-size: 60px;
+	}
+	
+	.principal_texto {
+		font-size: 19px;
+	}
+	
+	.principal_carousel img {
+		width: 400px;
+	}
+	
+	.principal_carousel .precio {
+		font-size: 28px;
+		width: 110px;
+		height: 60px;
+		bottom: 10px;
+		right: 10px;
+	}
+	
+	.principal_carousel .oferta {
+		font-size: 28px;
+		width: 80px;
+		height: 80px;
+		top: 10px;
+		left: 10px;
+	}
+}
+
+/* Extra large */
+@media (min-width: 1200px) and (max-width: 1399px) {
+	.marca_logo {
+		height: 65px;
+		padding: 9px;
+	}
+	
+	.marca_kiosco {
+		font-size: 37px;
+		margin-left: 9px;
+	}
+	
+	.marca_nombre {
+		font-size: 37px;
+		margin-left: 9px;
+	}
+	
+	.barra_links .link {
+		font-size: 23px;
+		padding: 0 18px;
+	}
+	
+	.barra_links .icono {
+		font-size: 23px;
+		padding: 0 8px;
+	}
+
+	.principal_informacion {
+		margin-left: 90px;
+	}
+	
+	.principal_subtitulo {
+		font-size: 35px;
+	}
+	
+	.principal_titulo {
+		font-size: 70px;
+	}
+	
+	.principal_texto {
+		font-size: 20px;
+	}
+	
+	.principal_carousel img {
+		width: 500px;
+	}
+	
+	.principal_carousel .precio {
+		font-size: 30px;
+		width: 120px;
+		height: 70px;
+		bottom: 12px;
+		right: 12px;
+	}
+	
+	.principal_carousel .oferta {
+		font-size: 30px;
+		width: 90px;
+		height: 90px;
+		top: 12px;
+		left: 12px;
+	}
+}
