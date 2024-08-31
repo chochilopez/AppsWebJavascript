@@ -1,0 +1,24 @@
+.contendor {
+  min-height: 300px;
+  background: mediumaquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+#caja1 {
+  background: darkblue;
+} 
+#caja2 {
+  background: darkcyan;
+} 
+#caja3 {
+  background: darkgreen;
+} 

@@ -1,0 +1,22 @@
+p {
+  text-align: center;
+  margin: 0 auto;
+  margin: 20px;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  background-color: cadetblue;
+  width: 80%;
+}
+
+#caja {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  background-color: seagreen  ;
+}
