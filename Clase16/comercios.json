@@ -1,0 +1,37 @@
+{
+  "comercios": [
+    {
+      "nombre": "Kiosco Carlitos",
+      "direccion": [
+        {
+          "calle": "San Martin 123",
+          "ciudad": "Parana",
+          "provincia" : "Entre Rios"
+        },
+        {
+          "calle": "Dorrego 123",
+          "ciudad": "Oro Verde",
+          "provincia" : "Entre Rios"
+        }
+      ]
+    },
+    {
+      "nombre": "Kiosco Juanita",
+      "direccion": [
+        {
+          "calle": "Urquiza 123",
+          "ciudad": "Santa Fe",
+          "provincia" : "Santa Fe"
+        },
+        {
+          "calle": "Alfonsina Storni 123",
+          "ciudad": "Esperanza",
+          "provincia" : "Santa Fe"
+        }
+      ]
+    }
+  ]
+}
+  
+
+
